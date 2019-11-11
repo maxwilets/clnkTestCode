@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -8,64 +9,83 @@
     <script type="text/javascript" src="javascript.js"></script>
 
     <title>Max Wilets</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1 class="heading">Max Wilets</h1>
     <div class="one">
-      <div class="par1">
-        <p>
-          Hello! My name is Max Wilets and I made this page with only html, CSS,
-          and Javascript! I was born in Sandy, Utah. I graduated from the
-          University of Utah with a BS in Geography. I also attended a coding
-          bootcamp at the University of Utah where I will be a teaching
-          assistant of my own cohort
-        </p>
-        <p>
-          My hobbies include skateboarding, making music, and playing table top
-          board games.
-        </p>
-      </div>
+        <div class="par1">
+            <p>
+                Hello! My name is Max Wilets and I made this page with only html, CSS,
+                and Javascript! I was born in Sandy, Utah. I graduated from the
+                University of Utah with a BS in Geography. I also attended a coding
+                bootcamp at the University of Utah where I will be a teaching
+                assistant of my own cohort
+            </p>
+            <p>
+                My hobbies include skateboarding, making music, and playing table top
+                board games.
+            </p>
+        </div>
     </div>
     <div class="par2">
-      <div class="cols">
-        <h2>Things that Make me nervous</h2>
-        <p class="colText">
-          I get nervous in large crowds and and prefer more smaller more
-          intimate situations that are less chaotic. I also get anxious when I
-          order packages because I can't wait for them to arrive!
-        </p>
-      </div>
-      <div class="cols">
-        <h2>Greatest Developer Moment</h2>
-        <p class="colText">
-          My greatest developer moment was working on the East High Support
-          project. It was very rewarding to spend so much time and produce
-          something that made a positive impact to the community.
-        </p>
-      </div>
-      <div class="cols">
-        <h2>Favorite Pop Culture Moment</h2>
-        <p class="colText">
-          My favorite pop culture moment is when
-        </p>
-      </div>
+        <div class="cols shading">
+            <h2>Things that Make me nervous</h2>
+            <p class="colText">
+                I get nervous in large crowds and and prefer more smaller more
+                intimate situations that are less chaotic. I also get anxious when I
+                order packages because I can't wait for them to arrive!
+            </p>
+        </div>
+        <div class="cols midCol shading">
+            <h2>Greatest Developer Moment</h2>
+            <p class="colText">
+                My greatest developer moment was working on the East High Support
+                project. It was very rewarding to spend so much time and produce
+                something that made a positive impact to the community.
+            </p>
+        </div>
+        <div class="cols endCol shading">
+            <h2>Favorite Pop Culture Moment</h2>
+            <p class="colText">
+                My favorite pop culture moment is when Tony Hawk did the 900 for 
+                the first time. It was a moment that changed skateboard forever resulting
+                in larger coverage from the media and a skateboarding video game franchise.
+                Also the Avengers Infinity War and End Game was an amazing culmination of 
+                10+ years of comic book movies. 
+            </p>
+        </div>
     </div>
     <div class="par3">
-    
-           <div id="numberForm">
-              Rows
-              <!--I could have made the default value be 6 but for the sake of this project I let the default be empty-->
-              <input id="newRow" type="number" value="" name="rows" min="1" max="6">
-              Column
-              <input id="newColumn" type="number" value="" name="column" min="1" max="6">
-              <button class="tableButton" onClick="tableMaker()">Make Table</button>
-           </div>
-              <div id="dynaTable">
-
-              </div>
-          
+        <div class="centerText shading">
+        <h2> Multiplication Table </h2>
+        
+            <p>This is a multiplication table generator! Click on the row and column
+            fields to increase or decrease the number of rows you want. When the table is 
+            made, a reset button will appear to remove the table and try again!
+            </p>
+            <div id="numberForm">
+                    Rows
+                    <!--I could have made the default value be 6 but for the sake of this project I let the default be empty-->
+                    <input id="newRow" type="number" value="" name="rows" min="1" max="6">
+                    Column
+                    <input id="newColumn" type="number" value="" name="column" min="1" max="6">
+                    <button class="btn" onClick="tableMaker()">Make Table</button>
+                </div>
         </div>
-      </div>
+        
     </div>
-  </body>
+    <div className="filler">
+            
+        </div>
+        <div class="tableBox">
+        <div id="dynaTable" class="newTable">
+            
+        </div>
+        <button id="reset" onClick="removeTable()" class="btn">Reset</button>
+        </div>
+    
+    
+</body>
+
 </html>

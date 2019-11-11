@@ -1,23 +1,8 @@
-
-// Close the dropdown menu if the user clicks outside of it
-//   window.onclick = function(event) {
-//     //   this.console.log("click")
-//     if (!event.target.matches('.dropbtn')) {
-//       var dropdowns = document.getElementsByClassName("dropdown-content");
-//       var i;
-//       for (i = 0; i < dropdowns.length; i++) {
-//         var openDropdown = dropdowns[i];
-//         if (openDropdown.classList.contains('show')) {
-//           openDropdown.classList.remove('show');
-//         }
-//       }
-//     }
-//   }
-
 function tableMaker() {
   var dynaTable = document.getElementById("dynaTable");
   var table = document.createElement("TABLE");
   var numberForm = document.getElementById("numberForm");
+  var reset = document.getElementById("reset")
   
   table.border = "1";
 
@@ -37,18 +22,32 @@ function tableMaker() {
   console.log(x);
   console.log(y);
 
-  for (let j = 0; j < x; j++) {
+  for (let j = 1; j <= x; j++) {
     var tr = document.createElement("TR");
     tableBody.appendChild(tr);
+    
 
-    for (let i = 0; i < y; i++) {
-      let z = (j + 1) * (i + 1);
+    for (let i = 1; i <= y; i++) {
+    //   let z = (j + 1) * (i + 1);
+      let z = j * i
       var td = document.createElement("TD");
       td.width = "75";
-      td.appendChild(document.createTextNode(`${j + 1} x ${i + 1} = ${z}`));
+    //   td.appendChild(document.createTextNode(`${j + 1} x ${i + 1} = ${z}`));
+    td.appendChild(document.createTextNode(`${j } x ${i } = ${z}`));
+
       tr.appendChild(td);
     }
   }
   dynaTable.appendChild(table);
-  numberForm.style.display("none");
+  numberForm.style.display = "none";
+  reset.style.display = "block"
+}
+
+function removeTable() {
+    console.log(dynaTable)
+   dynaTable.innerHTML = "";
+   numberForm.style.display = "block";
+   reset.style.display = "none";
+   document.getElementById("newRow").value = "";
+   document.getElementById("newColumn").value ="";
 }

@@ -1,57 +1,45 @@
 body {
     /* background-image: linear-gradient(#eb01a5, #d13531); */
+    background-image: linear-gradient(#d13531, #bae7f5)
 
+}
+.centerText {
+    /* align-content: center; */
+    /* background: #de7254; */
+    clear: both;
+    display: block;
+    margin-left: 27%;
+    margin-top: 2.5%;
+    padding-left: 2.5%;
+    padding-bottom: 2.5%;
+    position: relative;
+    width: 43%;
 }
 .cols {
-    float: left;
-    padding-left: 2.5%;
-    width: 30%;
-}
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    float: left;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content option {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content option:hover {background-color: #ddd}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
 
+    display: inline-block;
+    /* height: 100%; */
+    opacity: 85%;
+    margin: 1% 0.5% 1% 0;
+    padding: 0 2.5% 2.5%;
+
+    width: 30%;
+
+}
+
+.midCol {
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+.endCol {
+    float:right;
+}
+.filler {
+    clear: both;
+    width: 100%
+    
+}
 .heading {
     align-content: center;
     background: black;
@@ -61,32 +49,53 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1;
-    
-}
 
+}
+.newTable {
+    /* display:inline-flex;
+    width: 60%; */
+    display: flex;
+    /* clear: both; */
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
 .one {
-    background: #eb01a5;
-    background-image: url("./assets/images/mountain-banner.png"), linear-gradient(#eb01a5, #d13531);
+    /* background: #eb01a5; */
+    
+    /* background-image: url("./assets/images/mountain-banner.png"), linear-gradient(#eb01a5, #d13531); */
+    background-image: url("./assets/images/mountain-banner.png"), linear-gradient(#d13531, #bae7f5 );
     background-size: 100%;
     padding: 1% 0;
     background-repeat: no-repeat;
 }
+
 .par1 {
-   align-content: center;
-   background: #de7254;
-   font-size: 18px;
-   opacity: 85%;
-   margin: 5% 20% 0 20%;
-   padding: 0.5% 5%;
-   
-}
-.par2 {
-    
-    background-image: linear-gradient(#eb01a5, #d13531); 
-    /* background-size: 100%; */
-    /* background: none */
+    align-content: center;
+    background: #de7254;
+    font-size: 18px;
+    opacity: 85%;
+    margin: 5% 20% 0 20%;
+    padding: 0.5% 5%;
 
 }
+
+.par2 {
+    display: flex;
+
+}
+
 .par3 {
-    float: left;
+    display: flex;
+
+}
+.shading {
+    background: #de7253;
+    box-shadow: 3px 3px #ba793f;
+
+
+}
+
+#reset {
+    display: none;
 }
