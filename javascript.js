@@ -12,7 +12,7 @@ function tableMaker() {
   var y = document.getElementById("newColumn").value;
   //This handles if there is no input I could have set the default in the
   //input to 6 but I chose this direction instead so it doesn't start with 6
-  if(x || y > 6 || x < 1 || y < 1) {
+  if(x >6 || y > 6 || x < 1 || y < 1) {
       alert("Please enter a number between 1 and 6")
   }
   if (x === "") {
@@ -30,8 +30,7 @@ function tableMaker() {
   
 
     for (let i = 1; i <= y; i++) {
-    //   let z = (j + 1) * (i + 1);
-      let z = j * i
+      let z = j * i;
       var td = document.createElement("TD");
       td.width = "75";
     //   td.appendChild(document.createTextNode(`${j + 1} x ${i + 1} = ${z}`));
