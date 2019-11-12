@@ -67,7 +67,7 @@
             <div id="numberForm">
                     Rows
                     <!--I could have made the default value be 6 but for the sake of this project I let the default be empty-->
-                    <input id="newRow" type="number" value="" name="rows" min="1" max="6">
+                    <input id="newRow" type="number" value="" name="rows" min=1 max=6>
                     Column
                     <input id="newColumn" type="number" value="" name="column" min="1" max="6">
                     <button class="btn" onClick="tableMaker()">Make Table</button>
@@ -75,14 +75,11 @@
         </div>
         
     </div>
-    <div className="filler">
-            
-        </div>
         <div class="tableBox">
         <div id="dynaTable" class="newTable">
             
         </div>
-        <button id="reset" onClick="removeTable()" class="btn">Reset</button>
+        <button id="reset" class="btn" onClick="removeTable()" class="btn">Reset</button>
         </div>
     
     

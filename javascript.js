@@ -12,6 +12,9 @@ function tableMaker() {
   var y = document.getElementById("newColumn").value;
   //This handles if there is no input I could have set the default in the
   //input to 6 but I chose this direction instead so it doesn't start with 6
+  if(x || y > 6 || x < 1 || y < 1) {
+      alert("Please enter a number between 1 and 6")
+  }
   if (x === "") {
     x = 6;
   }
@@ -19,13 +22,12 @@ function tableMaker() {
     y = 6;
   }
   //consol.log outside of if statements to test scope
-  console.log(x);
-  console.log(y);
-
+  
+  else{
   for (let j = 1; j <= x; j++) {
     var tr = document.createElement("TR");
     tableBody.appendChild(tr);
-    
+  
 
     for (let i = 1; i <= y; i++) {
     //   let z = (j + 1) * (i + 1);
@@ -38,9 +40,11 @@ function tableMaker() {
       tr.appendChild(td);
     }
   }
+
   dynaTable.appendChild(table);
   numberForm.style.display = "none";
-  reset.style.display = "block"
+  reset.style.display = "block";
+}
 }
 
 function removeTable() {
