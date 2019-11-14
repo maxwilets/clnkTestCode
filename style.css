@@ -8,6 +8,17 @@ body {
 
 }
 
+.nav-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+    letter-spacing: .2em;
+    color: grey;
+    transition: .25s;
+}
+
 a {
     color: grey;
     text-decoration: none!important;
@@ -16,6 +27,13 @@ a {
 
 a:hover {
     color: rgb(86, 86,86);
+}
+
+.one {
+    background-image: url("mountain-banner.png"), linear-gradient(#d13531, #bae7f5 );
+    background-size: 100%;
+    padding: 1% 0;
+    background-repeat: no-repeat;
 }
 
 .banner-wrapper {
@@ -30,10 +48,8 @@ a:hover {
 
 .banner {
     display: flex;
-    /* border: solid black 5px; */
     align-self: center;
     align-items: center;
-    /* width: 70 auto; */
     margin: 25px;
     padding: 25px;
     background-color:#de7254;
@@ -50,164 +66,46 @@ a:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
 
-.btn {
-    border-radius: 5px;
-    background: lightgray;
-    margin-left: 5px;
-    padding: 8px;
-     -webkit-transition: 0.4s;
-     transition-duration: 0.4s;
-}
-
-.btn:hover {
-    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    transition: all 0.4s ease 0s;
-}
-.centerText {
-    
-    display: block;
-    margin-left: 27%;
-    margin-top: 2.5%;
-    padding: 1% 2.5%;
-    width: 43%;
-}
-
-.circle-photo {
+  .circle-photo {
     border-radius: 50%;
 }
 
-.cols {
-    
-    display: inline-block;
-    opacity: 85%;
-    margin: 1% 0.5% 1% 0;
-    padding: 0 2.5% 2.5%;
-    width: 30%;
-
-}
-.colImg {
-    border-radius: 5px;
-    display: block;
-    height: 100%;
-    width: 96%;
-    padding: 5px;
-    /* border: solid gray 2.5px; */
-}
 .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 75vh;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    flex-wrap: wrap;
+    margin: 25px;
+    padding: 25px;
+    width: 100 auto;
+    height: auto;
+    
 }
 
 .content-wrapper {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
+    justify-content: space-around;
+    margin-left: 10%;
 }
 
-.first-col, .second-col, .third-col {
-    display: flex; 
-    justify-content: space-between;
+ .first-col, .second-col, .third-col {
+    display: flex;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     width: 320px;
     margin: 10px;
 }
 
-.midCol {
-    margin-left: 5%;
-    margin-right: 5%
-}
-.tableMaker {
-     margin-left: 33.5%; 
-}
-.endCol {
-    float:right;
-}
-
-.heading {
-    align-content: center;
-    background: black;
-    color: #2bf502;
-    /* margin-left: 33%; */
-    opacity: 80%;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-
-}
-
-img {
-    border-radius: 5px;
-    padding: 5px;
-    border: solid gray 2px;
-}
-
-.image-wrapper {
-     display: block;
-   
-}
-
-.main-bio {
-    align-items: center;
-
-}
-
-.nav-wrapper {
+.position {
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    font-family: 'Montserrat', sans-serif;
-    font-variant: small-caps;
-    letter-spacing: .2em;
-    color: grey;
-    transition: .25s;
+    margin-left: 20%
 }
-
-.newTable {
-    display: flex;
-    justify-content: center;
-    margin: 2% 0;
-    position: relative;
-    width: 100%;
-}
-.one {
-    background-image: url("./assets/images/mountain-banner.png"), linear-gradient(#d13531, #bae7f5 );
-    background-size: 100%;
-    padding: 1% 0;
-    background-repeat: no-repeat;
-}
-
-.par1 {
-    align-content: center;
-    background: #de7254;
-    font-size: 18px;
-    opacity: 85%;
-    margin: 5% 20% 0 20%;
-    padding: 0.5% 5%;
-
-}
-
-.par2 {
-     display: inline-flex;  
-     height: 100%
-
-}
-
 .project-wrapper {
     background-color:#de7254;
     border-radius: 5px;
-    flex:1 0 auto;
     margin: 10px;
     height: 100%;
-    padding-bottom: 2%;
     align-content: center;
     justify-content: center;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -217,7 +115,14 @@ img {
 .project-wrapper:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
-  .button-text-wrapper {
+
+img {
+    border-radius: 5px;
+    padding: 5px;
+    border: solid white 5px;
+}
+
+.button-text-wrapper {
     display: flex;
     margin: -8px 5px 0px 5px;
 }
@@ -257,6 +162,57 @@ a.round-button.play-button {
     transition: all 0.4s ease 0s;
     }
 
+.text-wrapper {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* THIRD SECTION CSS */
+.par3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50% auto;
+}
+
+.centerText {
+    
+    margin-left: 27%;
+    margin-top: 2.5%;
+    padding: 1% 2.5%;
+    width: 43%;
+}
+
+
+.project-wrapper:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+.text-wrapper {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+    border-radius: 5px;
+    background: lightgray;
+    margin-left: 5px;
+    padding: 8px;
+     -webkit-transition: 0.4s;
+     transition-duration: 0.4s;
+}
+
+.btn:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
 td {
     background: #de7254;
 
@@ -271,10 +227,43 @@ td {
     flex-wrap: wrap;
     font-family: 'Raleway', sans-serif;
 }
-
-#reset {
+#reset { 
     display: none;
-    justify-content: center;
-    margin-left: 33%;
-    position: relative;
 }
+
+/* MEDIA QUERIES add to .banner-wrapper */
+@media screen and (max-width: 800px) {
+    .content-wrapper {
+        margin-left: 0;
+    }
+    .newTable {
+        margin-left: 52.5%
+    }
+}
+@media screen and (max-width: 640px) {
+    .banner {
+        flex-direction: row;
+        flex-wrap:wrap
+    }
+    .content-wrapper {
+        margin-left: -5%;
+    }
+    .position {
+        margin-left: 0%;
+        display: flex;
+    }
+  
+    .responsebox {
+        display: block;
+
+        width: 350px;
+        margin-left: 5%;
+    }
+    .newTable {
+        margin-left: -1%;
+    }
+    .par3 {
+        width: 100%;
+    }
+}
+
