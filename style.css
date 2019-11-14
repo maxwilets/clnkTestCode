@@ -1,3 +1,5 @@
+/* PORTFOLIO PAGE */
+
 body {
     background-image: linear-gradient(#d13531, #bae7f5);
     background-repeat: no-repeat;
@@ -30,7 +32,7 @@ a:hover {
 }
 
 .one {
-    background-image: url("mountain-banner.png"), linear-gradient(#d13531, #bae7f5 );
+    background-image: url("images/mountain-banner.png"), linear-gradient(#d13531, #bae7f5 );
     background-size: 100%;
     padding: 1% 0;
     background-repeat: no-repeat;
